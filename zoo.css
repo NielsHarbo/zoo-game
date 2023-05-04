@@ -1,0 +1,89 @@
+img{
+    max-width:100%;
+}
+body, html{
+    margin:0;
+    padding:0;
+}
+*{
+    box-sizing: border-box;
+}
+.scene{
+    background-image: url(assets/bg.jpg);
+    width:100vw;
+    height: 100vh;
+    background-size: 50% auto ;
+    position:relative;
+}
+.bur{
+    position:absolute;
+    width:150px;
+}
+
+.bur img{
+    position: relative;
+}
+.emoji{
+    position: absolute;
+    top:45%;
+    left:45%;
+    font-size: 160%;
+    padding:0;
+    margin: 0;
+    animation:animation1 5s infinite;
+}
+@keyframes animation1 {
+    0%{
+        transform: scaleX(-1);
+        left:0;
+    }
+    49%{
+        transform: scaleX(-1);
+    }
+    50%{
+        transform: scaleX(1);
+        left:75%;
+    }
+    99%{
+        transform: scaleX(1);
+    }
+    100%{
+        transform: scaleX(-1);
+        left:0;
+    }
+}
+
+.create-animal{
+    display: none;
+    position:absolute;
+}
+
+
+.points{
+    position: fixed;
+    top:7px;
+    left:7px;
+    background-color: mediumorchid;
+    color:#fff;
+    padding:5px;
+    z-index:1;
+}
+
+.source{
+    position:fixed;
+    right:0;
+    bottom: 7px;
+    z-index: 2;
+    background-color: #fff;
+    padding:2px;
+    display: none;
+}
+
+#message-box{
+    display: none;
+    position:absolute;
+    padding:7px;
+    z-index:3;
+    background: rgba(256,256,256, 0.5);
+}
+

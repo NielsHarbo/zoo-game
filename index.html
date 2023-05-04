@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo</title>
+    <link rel="stylesheet" href="zoo.css">
+</head>
+<body>
+    <div class="points" id="points">
+        Point:
+        <span id="point-number">
+        </span>
+    </div>
+    <div class="scene">
+        <!--
+        <div class="bur gorilla">
+            <p class="animal">
+                🦍
+            </p>
+            <img src="assets/bur.png" alt="">
+        </div>
+        -->
+
+
+    </div>
+
+    <form action="" id="create-animal" class="create-animal">
+        <select name="selected-animal" id="selected-animal">
+            <option value="0" disabled selected>Vælg et dyr</option>
+            <option value="🐒">🐒</option>
+            <option value="🦍">🦍</option>
+            <option value="🐅">🐅</option>
+            <option value="🐊">🐊</option>
+            <option value="🐸">🐸</option>
+            <option value="🐪">🐪</option>
+        </select>
+    </form>
+
+    <div id="source" class="source">
+        <div id="apples" draggable="true" data-food="fruit">
+            <span>🍏</span>
+            <span>Æbler</span>
+        </div>
+        <div id="watermelon" draggable="true" data-food="fruit">
+            <span>🍉</span>
+            <span>Vandmelon</span>
+        </div>
+        <div id="grapes" draggable="true" data-food="fruit">
+            <span>🍇</span>
+            <span>Vindruer</span>
+        </div>
+        <div id="meat" draggable="true" data-food="meat">
+            <span>🍖</span>
+            <span>Menneske steak</span>
+        </div>
+        <div id="grass" draggable="true" data-food="grass">
+            <span>☘</span>
+            <span>Gras</span>
+        </div>
+    </div>
+    <audio src="" id="audio"></audio>
+    <div id="message-box"></div>
+    <script src="dd.js"></script>
+    <script src="zoo.js"></script>
+    
+</body>
+</html>
