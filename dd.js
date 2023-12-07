@@ -1,4 +1,3 @@
-//Vi genbruger scriptet fra version 1
 //DOM REFERENCER
 const sourceDiv = document.querySelector("#source") //mad container
 const targetDiv = document.querySelectorAll(".animal") //alle dyr
@@ -30,7 +29,6 @@ function cancelDefault (event){
 function dropped (event){
     topCord = event.clientY / window.innerHeight * 100  +"%"
     leftCord = event.clientX / window.innerWidth * 100 +"%"
-
     audio.setAttribute("src", this.dataset.sound)
     audio.play()
     let sourceId = event.dataTransfer.getData("elmId")
@@ -42,7 +40,6 @@ function dropped (event){
         messageBox.style.top = topCord
         messageBox.style.left = leftCord
         messageBox.style.display = "block"
-
         pointNumber.innerHTML = pointNumber.innerHTML + "❤" 
     }
     else{
