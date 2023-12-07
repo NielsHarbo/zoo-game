@@ -4,14 +4,14 @@ const createForm = document.querySelector("#create-animal")
 const selectedAnimal = document.querySelector("#selected-animal")
 
 //Vi vil gerne have access til musens kordinater
-//i det globale scope men vi har endnu ingen værdier til dem
+//i det globale scope, men vi har endnu ingen værdier til dem.
+//Derfor deklarerer vi to variabler uden værdier
 let topCord
 let leftCord
 
 //Vi deklarerer også lige en global variabel der kommer til
 //at indeholde en sti til en lydfil 
 let animalSound = ""
-
 
 scene.addEventListener("click", function(event){
         //event.target er det element som der er klikket på
@@ -20,11 +20,10 @@ scene.addEventListener("click", function(event){
         topCord = event.clientY / window.innerHeight * 100  +"%"
         leftCord = event.clientX / window.innerWidth * 100 +"%"
             //Vi har jo lavet formen i HTML, så nu skal vi bare
-            //gøre den synlig og placere den
+            //gøre den synlig og placere den der hvor brugeren har klikket
         createForm.style.display = "block"
         createForm.style.top = topCord
         createForm.style.left = leftCord
-
     }
 })
 
